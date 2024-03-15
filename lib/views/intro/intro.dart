@@ -38,7 +38,7 @@ class _IntroScreenState extends State<IntroScreen> {
           TextButton(
             onPressed: () {
               // Navigate to the homepage using GetX
-              Get.offAllNamed('/home-screen');
+              Get.offAllNamed('/login');
             },
             child: Text(
               'Skip',
@@ -66,6 +66,16 @@ class _IntroScreenState extends State<IntroScreen> {
           buildDot(currentPageIndex == 2),
         ],
       ),
+      floatingActionButton: currentPageIndex == 2
+          ? FloatingActionButton(
+           onPressed: () {
+          // Navigate to sign up page
+          Get.toNamed('/login');
+          },
+        child: Icon(Icons.arrow_forward),
+      )
+            : null,
+          floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
     );
   }
 
@@ -91,28 +101,6 @@ class _IntroScreenState extends State<IntroScreen> {
                   style: TextStyle(fontSize: 16.0),
                 ),
               ],
-            ),
-          ),
-          Align(
-            alignment: Alignment.bottomRight,
-            child: Container(
-              margin: const EdgeInsets.only(bottom: 40.0, right: 20.0),
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.blue,
-              ),
-              child: IconButton(
-                icon: Icon(Icons.arrow_forward),
-                color: Colors.white,
-                iconSize: 40.0,
-                onPressed: () {
-                  if (_pageController.page != null && _pageController.page! < 2) {
-                    _pageController.nextPage(
-                        duration: Duration(milliseconds: 500),
-                        curve: Curves.easeInOut);
-                  }
-                },
-              ),
             ),
           ),
         ],
