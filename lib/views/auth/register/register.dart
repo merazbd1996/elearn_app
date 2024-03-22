@@ -45,7 +45,7 @@ class RegisterScreen extends StatelessWidget {
                   ),
                   obscureText: true,
                 ),
-                SizedBox(height: 20),
+                SizedBox(height: 10),
                 TextField(
                   decoration: InputDecoration(
                     labelText: 'Confirm Password',
@@ -53,7 +53,7 @@ class RegisterScreen extends StatelessWidget {
                   ),
                   obscureText: true,
                 ),
-                SizedBox(height: 20),
+                SizedBox(height: 10),
                 CustomButton(
                   title: 'Sign Up',
                   onTap: () {

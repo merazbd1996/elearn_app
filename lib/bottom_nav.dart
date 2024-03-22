@@ -21,9 +21,7 @@ class _BottomNavBarDemoState extends State<BottomNavBarDemo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Bottom Nav Bar Demo'),
-      ),
+
       body: IndexedStack(
         index: _selectedIndex,
         children: _widgetOptions,
