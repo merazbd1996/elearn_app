@@ -1,3 +1,4 @@
+import 'package:e_learning_app/bottom_nav.dart';
 import 'package:e_learning_app/views/home/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -56,7 +57,7 @@ class RegisterScreen extends StatelessWidget {
                 CustomButton(
                   title: 'Sign Up',
                   onTap: () {
-                    Get.to(HomeScreen());
+                    Get.to(BottomNavBarDemo());
                   },
                 ),
               ],
