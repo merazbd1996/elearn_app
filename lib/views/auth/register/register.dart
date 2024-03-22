@@ -1,3 +1,4 @@
+import 'package:e_learning_app/views/home/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../global_widgets/custom_button.dart';
@@ -10,7 +11,7 @@ class RegisterScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        title: Text("Register a Screen"),
+        title: const Text("Register Screen"),
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
@@ -54,7 +55,7 @@ class RegisterScreen extends StatelessWidget {
               CustomButton(
                 title: 'Sign Up',
                 onTap: () {
-
+                  Get.to(HomeScreen());
                 },
               ),
             ],
