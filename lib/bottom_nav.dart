@@ -1,3 +1,4 @@
+import 'package:e_learning_app/utils/colors.dart';
 import 'package:e_learning_app/views/home/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -21,7 +22,7 @@ class _BottomNavBarDemoState extends State<BottomNavBarDemo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      backgroundColor: AppColors.bg,
       body: IndexedStack(
         index: _selectedIndex,
         children: _widgetOptions,

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class AppColors {
   static const Color primary = Color(0xFF2C6BE7);
   static const Color secondary = Color(0xFF044ABB);
+  static const Color bg = Color(0xFFFFF7FC);
 
   // !---------------------Recruiter---------------------
   static const Color border = Color.fromARGB(255, 225, 228, 231);
