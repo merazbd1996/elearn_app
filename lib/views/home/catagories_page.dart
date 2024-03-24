@@ -71,10 +71,7 @@ class CategoriesPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       // Adjust this part according to your logo and text data
-                      Placeholder(
-                        fallbackHeight: 50, // Adjust height as needed
-                        fallbackWidth: 50, // Adjust width as needed
-                      ),
+                      Image.asset("assets/images/logo.png"),
                       SizedBox(height: 10.0),
                       Text(
                         'Category $index',

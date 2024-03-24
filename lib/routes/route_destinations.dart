@@ -19,23 +19,23 @@ class RouteDestinations {
     ),
     GetPage(
       name: RouteNames.login,
-      page: () => const LoginScreen(),
+      page: () => LoginScreen(),
     ),
     GetPage(
       name: RouteNames.homeScreen,
-      page: () => const HomeScreen(),
+      page: () => HomeScreen(),
     ),
     GetPage(
       name: RouteNames.register,
-      page: () => const RegisterScreen(),
+      page: () =>  RegisterScreen(),
     ),
     GetPage(
       name: RouteNames.settingScreen,
-      page: () => const Test(),
+      page: () =>  Test(),
     ),
     GetPage(
       name: RouteNames.recruiterCreateScreen,
-      page: () => const RecruiterOrganizationScreen(),
+      page: () =>  RecruiterOrganizationScreen(),
     ),
     GetPage(
       name: RouteNames.categoriesPage,
@@ -43,7 +43,7 @@ class RouteDestinations {
     ),
     GetPage(
       name: RouteNames.popularCourses,
-      page: () => const PopularCourses(),
+      page: () =>  PopularCourses(),
     ),
     GetPage(
       name: RouteNames.searchPage,

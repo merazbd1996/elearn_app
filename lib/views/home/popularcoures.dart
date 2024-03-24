@@ -91,10 +91,7 @@ class _PopularCoursesState extends State<PopularCourses> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Placeholder(
-                        fallbackHeight: 50,
-                        fallbackWidth: 50,
-                      ),
+                      Image.asset("assets/images/logo.png"),
                       SizedBox(height: 10.0),
                       Text(
                         'Category $index',

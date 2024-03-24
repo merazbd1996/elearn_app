@@ -1,5 +1,7 @@
 import 'package:e_learning_app/utils/colors.dart';
+import 'package:e_learning_app/views/home/courses.dart';
 import 'package:e_learning_app/views/home/home_screen.dart';
+import 'package:e_learning_app/views/profile/profile.dart';
 import 'package:flutter/material.dart';
 
 
@@ -11,12 +13,12 @@ class BottomNavBarDemo extends StatefulWidget {
 class _BottomNavBarDemoState extends State<BottomNavBarDemo> {
   int _selectedIndex = 0;
 
-  static const List<Widget> _widgetOptions = <Widget>[
+  static List<Widget> _widgetOptions = <Widget>[
     HomeScreen(),
-    Text('My Courses'),
+    YouTubePlayerScreen(),
     Text('Inbox'),
     Text('Transaction'),
-    Text('Profile'),
+    ProfilePage(),
   ];
 
   @override
