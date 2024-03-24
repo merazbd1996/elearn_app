@@ -15,7 +15,7 @@ class RouteDestinations {
   static List<GetPage> pages = [
     GetPage(
       name: RouteNames.splash,
-      page: () => const SplashScreen(),
+      page: () =>  SplashScreen(),
     ),
     GetPage(
       name: RouteNames.login,

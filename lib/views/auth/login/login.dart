@@ -53,12 +53,13 @@ class LoginScreen extends StatelessWidget {
               ),
               SizedBox(height: 50),
               Text("Or"),
+              Divider(),
               SizedBox(height: 60),
-        
               TextButton(
                 onPressed: () {
                   Get.to(RegisterScreen());
                 },
+
                 child: Text(
                   "Don't have an account? SIGN UP",
                   style: TextStyle(color: Colors.blue),
